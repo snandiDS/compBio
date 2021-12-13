@@ -1,0 +1,42 @@
+The programs were compiled on Linux operating system (RedHat/Fedora).
+
+The architecture used was x86_64.
+
+The program was written as a sub-module for other pipelines/packages. These programs will fetch fasta sequence/s from a master fasta file. The SYNTAX/usage for each program can be viewed using the argument -h.
+
+Usage for fetchFastaWithSeqIds:
+	Please provide the following arguments:
+            master_fasta_file
+            if_file
+	Usage: fetchFasta-v2.c master_fasta_file id_file
+	Arguments:
+	1: master_fasta_file
+	2: id_file
+	This program will fetch specific fasta sequences from a fasta (master_fasta_file) file.
+	The specific ids will be taken from the input file (id_file).
+	Example of the id_file:
+	ENSMUST00000024796.6
+	ENSMUST00000029642.7
+	ENSMUST00000034550.3
+	ENSMUST00000035860.6
+	ENSMUST00000036023.2
+
+Usage for fetchFastaWithSeqID:
+	Please provide the following arguments:
+            master_fasta_file
+            SeqID
+	Usage: fetchFasta-v2.c master_fasta_file SeqID
+	Arguments:
+	1: master_fasta_file
+	2: SeqID
+	This program will fetch specific fasta sequences from a fasta (master_fasta_file) file.
+	The specific id will be taken from the command line argument.
+
+Usage for fetchFastaSub-2:
+	please provide the following arguments:
+            sequenceFile
+            sequenceID
+            subSequenceStart
+            subSequenceEnd
+            1/0 (1=reverceComplement and 0= as it is
+
